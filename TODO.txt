@@ -1,0 +1,3 @@
+Xata linkeada, queda por rellenar la base de datos de productos de prueba de represent y probar si funciona
+Hacer los fetch a la db
+Sacar la los productos

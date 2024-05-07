@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Diego-A-s-workspace-46g9f6.eu-central-1.xata.sh/db/notRepresent",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
