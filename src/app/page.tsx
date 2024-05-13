@@ -1,6 +1,7 @@
 import Hero from "@/components/hero/Hero";
 import hero1 from "../../public/hero1.jpg";
 import Link from "next/link";
+import ProductsLine from "@/components/productsLine/ProductsLine";
 
 export default function Home() {
   return (
@@ -13,12 +14,17 @@ export default function Home() {
           </h2>
         </div>
         <Link
-          className="text-white text-base font-medium underline underline-offset-8"
+          className="text-white text-base font-medium group relative"
           href="/metallica"
         >
-          → SHOP NOW
+          →{" "}
+          <span className="transition-all ease-in-out duration-500 pl-2">
+            SHOP NOW
+          </span>
+          <div className="absolute bottom-0 w-full border-b-[1px] border-white group-hover:animate-button_underline pointer-events-none" />
         </Link>
       </Hero>
+      <ProductsLine />
     </main>
   );
 }
