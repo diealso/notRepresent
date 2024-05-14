@@ -3,17 +3,21 @@ import Image from "next/image";
 
 const Product = ({ productData }: { productData: ProductT }) => {
   return (
-    <div className="flex flex-col flex-1">
+    <div className="flex flex-col flex-1 min-w-[20%]">
       <Image
-        className="w-full"
+        className="w-full pointer-events-none"
         width={200}
         height={200}
         src={`/products/${productData.slug}/${productData.img}`}
         alt={productData.imgAlt!}
       />
-      <span>{productData.name}</span>
-      <span>{productData.colorInfo}</span>
-      <span>{productData.price}</span>
+      <div className="flex flex-col align-middle justify-center items-center py-4">
+        <span className="text-center uppercase">{productData.name}</span>
+        <div className="pt-3 gap-1 flex flex-col align-middle justify-center items-center">
+          <span className="text-gray-500">{productData.colorInfo}</span>
+          <span className="text-gray-500">{productData.price} €</span>
+        </div>
+      </div>
     </div>
   );
 };

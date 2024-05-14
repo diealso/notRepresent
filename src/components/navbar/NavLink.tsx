@@ -16,7 +16,7 @@ const NavLink = ({
   const isActive = pathname === href;
   return (
     <Link
-      className={isActive ? "text-red-400" : "text-black"}
+      className={isActive ? "text-red-400" : "text-white"}
       href={href}
       {...rest}
     >

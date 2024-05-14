@@ -35,7 +35,7 @@ const getProducts = async () => {
 const ProductsLine = async ({ ...props }) => {
   const products: ProductT[] = await getProducts();
   return (
-    <div className="flex flex-row flex-nowrap gap-0 overflow-x-scroll">
+    <div className="flex w-full flex-row flex-nowrap gap-0 overflow-x-scroll">
       {products.map((product) => {
         return <Product key={product.id} productData={product} />;
       })}

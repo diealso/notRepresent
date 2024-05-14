@@ -9,7 +9,7 @@ interface IHero extends HTMLAttributes<HTMLDivElement> {
 
 const Hero = ({ imgSrc, altImgSrc, className, children, ...props }: IHero) => {
   return (
-    <div className={cn("h-dvh w-full", className)}>
+    <div className={cn("h-dvh w-full relative isolate", className)}>
       <div className="absolute top-0 left-0 w-full h-full object-cover lg:absolute lg:top-0 lg:left-0 lg:w-full lg:h-full lg:object-cover">
         <picture className="block object-cover h-full w-full overflow-hidden">
           <Image
