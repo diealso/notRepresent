@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar/Navbar";
 import { cn } from "@/lib/utils";
 
 import { ClerkProvider } from "@clerk/nextjs";
+import Footer from "@/components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
         <body className={cn(inter.className, "text-xs")}>
           <Navbar />
           {children}
+          <Footer />
         </body>
       </html>
     </ClerkProvider>

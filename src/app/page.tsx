@@ -24,7 +24,7 @@ export default function Home() {
           <div className="absolute bottom-0 w-full border-b-[1px] border-white group-hover:animate-button_underline pointer-events-none" />
         </Link>
       </Hero>
-      <ProductsLine />
+      <ProductsLine collection="metallica-collection" />
       <Hero imgSrc={hero1} altImgSrc="Man posing in front of a motorbike">
         <div className="items-center flex flex-col">
           <h3 className="text-white text-xl font-medium m-0 pb-1">NOW LIVE</h3>
@@ -43,6 +43,7 @@ export default function Home() {
           <div className="absolute bottom-0 w-full border-b-[1px] border-white group-hover:animate-button_underline pointer-events-none" />
         </Link>
       </Hero>
+      <ProductsLine collection="new-arrivals" />
     </main>
   );
 }

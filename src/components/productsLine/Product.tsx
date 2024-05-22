@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Product = ({ productData }: { productData: ProductT }) => {
   return (
-    <div className="flex flex-col flex-1 min-w-[20%]">
+    <div className="flex flex-col flex-1 min-w-[20%] max-w-[20%]">
       <Image
         className="w-full pointer-events-none"
         width={200}
