@@ -1,5 +1,6 @@
 import Hero from "@/components/hero/Hero";
 import hero1 from "../../public/hero1.jpg";
+import hero2 from "../../public/hero2.webp";
 import Link from "next/link";
 import ProductsLine from "@/components/productsLine/ProductsLine";
 
@@ -25,7 +26,7 @@ export default function Home() {
         </Link>
       </Hero>
       <ProductsLine collection="metallica-collection" />
-      <Hero imgSrc={hero1} altImgSrc="Man posing in front of a motorbike">
+      <Hero imgSrc={hero2} altImgSrc="Multiple people posing">
         <div className="items-center flex flex-col">
           <h3 className="text-white text-xl font-medium m-0 pb-1">NOW LIVE</h3>
           <h2 className="text-white text-4xl font-extrabold">
