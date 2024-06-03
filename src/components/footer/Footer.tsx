@@ -10,43 +10,43 @@ import SignUpFooterForm from "./SignUpFooterForm";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-100 text-black grid grid-cols-3 grid-rows-1 gap-4 pt-10 pb-4 px-8">
+    <div className="grid grid-cols-3 grid-rows-1 gap-4 bg-gray-100 px-8 pb-4 pt-10 text-black">
       <div>
-        <h4 className="text-sm font-light pb-2">Sign up</h4>
+        <h4 className="pb-2 text-sm font-light">Sign up</h4>
         <p className="text-sm font-light">
           Stay connected for the latest drops and exclusive brand updates.
         </p>
 
-        <div className="pt-4 pb-6">
+        <div className="pb-6 pt-4">
           <SignUpFooterForm />
-          <div className="w-full flex flex-row gap-14 items-center px-2">
+          <div className="flex w-full flex-row items-center gap-14 px-2">
             <Instagram
-              className="hover:cursor-pointer hover:text-gray-600 transition-colors duration-100"
+              className="transition-colors duration-100 hover:cursor-pointer hover:text-gray-600"
               size={19}
               strokeWidth={1.7}
             />
             <Facebook
-              className="hover:cursor-pointer hover:text-gray-600 transition-colors duration-100"
+              className="transition-colors duration-100 hover:cursor-pointer hover:text-gray-600"
               size={19}
               strokeWidth={1.7}
             />
             <Twitter
-              className="hover:cursor-pointer hover:text-gray-600 transition-colors duration-100"
+              className="transition-colors duration-100 hover:cursor-pointer hover:text-gray-600"
               size={19}
               strokeWidth={1.7}
             />
             <Twitch
-              className="hover:cursor-pointer hover:text-gray-600 transition-colors duration-100"
+              className="transition-colors duration-100 hover:cursor-pointer hover:text-gray-600"
               size={19}
               strokeWidth={1.7}
             />
             <Youtube
-              className="hover:cursor-pointer hover:text-gray-600 transition-colors duration-100"
+              className="transition-colors duration-100 hover:cursor-pointer hover:text-gray-600"
               size={19}
               strokeWidth={1.7}
             />
             <Linkedin
-              className="hover:cursor-pointer hover:text-gray-600 transition-colors duration-100"
+              className="transition-colors duration-100 hover:cursor-pointer hover:text-gray-600"
               size={19}
               strokeWidth={1.7}
             />

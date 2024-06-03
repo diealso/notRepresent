@@ -14,9 +14,7 @@ import {
 
 const getProducts = async (collection: string) => {
   const xata = getXataClient();
-
   const db = drizzle(xata);
-
   const record = await db
     .select({
       id: productSchema.id,
@@ -30,7 +28,7 @@ const getProducts = async (collection: string) => {
     .from(productSchema)
     .leftJoin(
       collectionsProductsSchema,
-      eq(productSchema.slug, collectionsProductsSchema.product_slug)
+      eq(productSchema.slug, collectionsProductsSchema.product_slug),
     )
     .where(eq(collectionsProductsSchema.collection_slug, collection))
     .execute();
